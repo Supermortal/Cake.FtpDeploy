@@ -5,6 +5,7 @@
     <version>0.0.1.0</version>
     <authors>Christopher Pink</authors>
     <owners>ChristopherPink</owners>
+	<licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Cake.FtpDeploy addin</description>
     <releaseNotes>Alpha</releaseNotes>
