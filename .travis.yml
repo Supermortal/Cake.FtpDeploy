@@ -1,3 +1,8 @@
 language: csharp
-script:    # the following commands are just examples, use whatever your build process requires
-  - ./build.sh
+solution: ./src/Cake.FtpDeploy.sln
+install:
+  - nuget restore ./src/Cake.FtpDeploy.sln
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release ./src/Cake.FtpDeploy.sln
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./src/Cake.FtpDeploy.Tests/bin/Release/Cake.FtpDeploy.Tests.dll
