@@ -76,6 +76,7 @@ namespace Cake.FtpDeploy.Services
                     directoryDetailsList.Add(directoryDetails);
                 }
             }
+            response.Close();
 
             return directoryDetailsList;
         }
