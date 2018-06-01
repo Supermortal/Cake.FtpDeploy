@@ -70,7 +70,7 @@ namespace Cake.FtpDeploy.Services
 
                     var directoryDetails = new DirectoryDetails()
                     {
-                        Type = (split[0].StartsWith("d")) ? DirectoryDetailsType.Directory : DirectoryDetailsType.File,
+                        Type = (DetermineIfDirectory(split)) ? DirectoryDetailsType.Directory : DirectoryDetailsType.File,
                         Name = split.Last()
                     };
                     directoryDetailsList.Add(directoryDetails);
@@ -79,6 +79,11 @@ namespace Cake.FtpDeploy.Services
             response.Close();
 
             return directoryDetailsList;
+        }
+
+        private bool DetermineIfDirectory(string[] responseLineParts)
+        {
+            return (responseLineParts[0].StartsWith("d") || (responseLineParts.Length >= 3 && responseLineParts[2].ToLower().StartsWith("<d")));
         }
 
     }
