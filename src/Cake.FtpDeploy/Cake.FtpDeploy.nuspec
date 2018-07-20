@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Cake.FtpDeploy</id>
-    <version>0.0.2.0</version>
+    <version>0.0.3.0</version>
     <authors>Christopher Pink</authors>
     <owners>ChristopherPink</owners>
 	  <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
@@ -13,7 +13,7 @@
     <copyright>Copyright 2018</copyright>
     <tags>cake ftp deploy</tags>
     <dependencies>
-      <dependency id="Cake.Core" version="0.25.0" />
+      <dependency id="Cake.Core" version="0.29.0" />
     </dependencies>
   </metadata>
   <files>
