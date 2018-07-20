@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Cake.FtpDeploy</id>
+    <version>0.0.2.0</version>
+    <authors>Christopher Pink</authors>
+    <owners>ChristopherPink</owners>
+	  <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/Supermortal/Cake.FtpDeploy</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Cake.FtpDeploy addin</description>
+    <releaseNotes>Alpha</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>cake ftp deploy</tags>
+    <dependencies>
+      <dependency id="Cake.Core" version="0.25.0" />
+    </dependencies>
+  </metadata>
+  <files>
+		<file src="bin/Release/Cake.FtpDeploy.dll" target="lib/net461" />
+		<file src="bin/Release/Cake.FtpDeploy.pdb" target="lib/net461" />
+	</files>
+</package>
