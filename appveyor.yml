@@ -1,6 +1,8 @@
 install:
   - cd ./src
   - dotnet restore
+build:
+  publish_nuget: true
 image: Visual Studio 2019
 branches:
   only:
