@@ -3,9 +3,7 @@ install:
   - dotnet restore
   - cd ../
 after_build:
-  - cd ./src/Cake.FtpDeploy
-  - nuget pack
-  - cd ../../
+  - nuget pack ./src/Cake.FtpDeploy
 image: Visual Studio 2019
 branches:
   only:
