@@ -8,6 +8,9 @@ image: Visual Studio 2019
 branches:
   only:
     - master
+artifacts:
+  - path: '*.nupkg'
+    name: Cake-FtpDeploy-Nuget-Packages
 deploy:
   provider: NuGet
   api_key:
