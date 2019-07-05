@@ -1,5 +1,7 @@
 # Cake.FtpDeploy
 
+![](https://ci.appveyor.com/api/projects/status/ky32ma3hw9ujidwl/branch/master?svg=true)
+
 ## Example Usage In Build.cake
 
 ```
