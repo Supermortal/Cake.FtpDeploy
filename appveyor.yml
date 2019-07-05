@@ -1,4 +1,4 @@
-script:
+install:
+  - cd ./src
   - dotnet restore
-  - dotnet build
 image: Visual Studio 2019
