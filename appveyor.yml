@@ -9,3 +9,8 @@ deploy:
   provider: NuGet
   api_key:
     secure: tP1nLIkxWmW2verdbala1nUbzmphYTyV7KZ5zkmHUZfDRvj6QRkE6cUiLeLHysTB
+notifications:
+  - provider: GitHubPullRequest
+    auth_token:
+      secure: xuvY5yx4SyuhAIDPa82UqN9bYSVV+Z2DilizZ9YbgQYBGUaSWvnul++C1/PqQBZ/
+    template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})"
